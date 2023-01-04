@@ -1,0 +1,77 @@
+{
+  "policy": {
+    "name": "appelb-delete-failed-elb",
+    "resource": "app-elb",
+    "filters": [
+      {
+        "tag:Procenter": "present"
+      }
+    ],
+    "actions": [
+      "delete"
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "b4eb9afc-2151-426a-9d66-2e3d9ce5aada",
+    "start": 1672831737.3761935,
+    "end_time": 1672831738.5553586,
+    "duration": 1.1791651248931885
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "elb.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "elasticloadbalancing.DeleteLoadBalancer": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-01-04T17:13:57.385140",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-01-04T17:13:57.385146",
+      "Value": 0.0006878376007080078,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-01-04T17:13:58.555323",
+      "Value": 1.169931173324585,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "policy": {
+    "name": "root-hardware-mfa",
+    "resource": "account",
+    "filters": [
+      {
+        "or": [
+          {
+            "type": "iam-summary",
+            "key": "AccountMFAEnabled",
+            "value": 1,
+            "op": "ne"
+          },
+          {
+            "and": [
+              {
+                "type": "iam-summary",
+                "key": "AccountMFAEnabled",
+                "value": 1,
+                "op": "eq"
+              },
+              {
+                "type": "has-virtual-mfa",
+                "value": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "102e7e38-1cf6-4a30-a1d9-4918914bde82",
+    "start": 1672227482.570343,
+    "end_time": 1672227485.6247003,
+    "duration": 3.0543572902679443
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "mfa_enable.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListAccountAliases": 1,
+    "iam.GetAccountSummary": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-28T17:23:05.579265",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-28T17:23:05.579304",
+      "Value": 2.931248426437378,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2022-12-28T17:23:05.624629",
+      "Value": 1.6689300537109375e-05,
+      "Unit": "Seconds"
+    }
+  ]
+}

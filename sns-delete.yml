@@ -1,0 +1,7 @@
+policies:
+  - name: delete-bad-topic
+    resource: aws.sns
+    filters:
+      - "tag:Procenter": present
+    actions:
+      - type: delete

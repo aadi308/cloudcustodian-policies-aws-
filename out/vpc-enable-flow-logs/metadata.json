@@ -1,0 +1,84 @@
+{
+  "policy": {
+    "name": "vpc-enable-flow-logs",
+    "resource": "vpc",
+    "filters": [
+      {
+        "type": "flow-logs",
+        "enabled": false
+      }
+    ],
+    "actions": [
+      {
+        "type": "set-flow-log",
+        "DeliverLogsPermissionArn": "arn:aws:iam::773914189848:role/aadi-flow-logs",
+        "LogGroupName": "/custodian/vpc/flowlogs/"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "6ad58dea-761c-47ee-9605-2d87afea8480",
+    "start": 1672306735.7357483,
+    "end_time": 1672306740.9057434,
+    "duration": 5.169995069503784
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "vpcflowlogs.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeFlowLogs": 1,
+    "logs.CreateLogGroup": 1,
+    "ec2.CreateFlowLogs": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-29T15:23:57.654140",
+      "Value": 2,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-29T15:23:57.654171",
+      "Value": 1.9085865020751953,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2022-12-29T15:24:00.905700",
+      "Value": 3.250657320022583,
+      "Unit": "Seconds"
+    }
+  ]
+}

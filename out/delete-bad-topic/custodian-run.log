@@ -1,0 +1,4 @@
+2023-01-04 17:03:26,965 - custodian.policy - INFO - policy:delete-bad-topic resource:aws.sns region:ap-south-1 count:0 time:3.75
+2023-01-04 17:05:33,467 - custodian.policy - INFO - policy:delete-bad-topic resource:aws.sns region:us-east-1 count:1 time:4.33
+2023-01-04 17:06:24,950 - custodian.policy - INFO - policy:delete-bad-topic resource:aws.sns region:us-east-1 count:1 time:0.00
+2023-01-04 17:06:31,629 - custodian.policy - INFO - policy:delete-bad-topic action:deletetopic resources:1 execution_time:6.68

@@ -1,0 +1,48 @@
+[
+  {
+    "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:773914189848:loadbalancer/app/test/6e25f29df835718b",
+    "DNSName": "test-846517939.us-east-1.elb.amazonaws.com",
+    "CanonicalHostedZoneId": "Z35SXDOTRQ7X7K",
+    "CreatedTime": "2023-01-04T11:26:32.160000+00:00",
+    "LoadBalancerName": "test",
+    "Scheme": "internet-facing",
+    "VpcId": "vpc-02fbcdb4a3ed29d29",
+    "State": {
+      "Code": "active"
+    },
+    "Type": "application",
+    "AvailabilityZones": [
+      {
+        "ZoneName": "us-east-1b",
+        "SubnetId": "subnet-041c29747e2ae2a3f",
+        "LoadBalancerAddresses": []
+      },
+      {
+        "ZoneName": "us-east-1a",
+        "SubnetId": "subnet-07d97e0654e1cef53",
+        "LoadBalancerAddresses": []
+      }
+    ],
+    "SecurityGroups": [
+      "sg-04e4511df37f6d44e"
+    ],
+    "IpAddressType": "ipv4",
+    "Tags": [
+      {
+        "Key": "Procenter",
+        "Value": ""
+      },
+      {
+        "Key": "AutoTag_Creator",
+        "Value": "arn:aws:sts::773914189848:assumed-role/AWSReservedSSO_POC_3aff0019dd88a8d8/aditya.yadav"
+      },
+      {
+        "Key": "AutoTag_CreateTime",
+        "Value": "2023-01-04T11:26:32Z"
+      }
+    ],
+    "c7n:MatchedFilters": [
+      "tag:Procenter"
+    ]
+  }
+]

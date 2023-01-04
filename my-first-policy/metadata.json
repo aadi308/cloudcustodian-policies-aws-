@@ -1,0 +1,66 @@
+{
+  "policy": {
+    "name": "my-first-policy",
+    "resource": "aws.ec2",
+    "filters": [
+      {
+        "tag:Custodian": "present"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "05dcf748-a75a-4022-9f76-d206208b9a9d",
+    "start": 1670843772.3042045,
+    "end_time": 1670843772.314444,
+    "duration": 0.010239601135253906
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "687547058094",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": ".",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "policy.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-12T17:01:12.314218",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-12T17:01:12.314225",
+      "Value": 0.0006122589111328125,
+      "Unit": "Seconds"
+    }
+  ]
+}

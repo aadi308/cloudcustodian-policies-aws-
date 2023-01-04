@@ -1,0 +1,79 @@
+{
+  "policy": {
+    "name": "delete-bad-topic",
+    "resource": "aws.sns",
+    "filters": [
+      {
+        "tag:Procenter": "present"
+      }
+    ],
+    "actions": [
+      {
+        "type": "delete"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "063cfd99-bf83-46e1-a7a3-678347b515e5",
+    "start": 1672831284.9419315,
+    "end_time": 1672831291.6305726,
+    "duration": 6.68864107131958
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "sns-delete.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "sns.DeleteTopic": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-01-04T17:06:24.950947",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-01-04T17:06:24.950955",
+      "Value": 0.0006744861602783203,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-01-04T17:06:31.630520",
+      "Value": 6.679320335388184,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+2022-12-14 15:27:30,909 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:27:33,095 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-maid-offhours
+2022-12-14 15:27:35,142 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 502, in _create_or_update
+    result = self.client.create_function(**params)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 938, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InvalidParameterValueException: An error occurred (InvalidParameterValueException) when calling the CreateFunction operation: The role defined for the function cannot be assumed by Lambda.
+2022-12-14 15:36:01,352 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:36:03,142 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-maid-offhours
+2022-12-14 15:36:04,781 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 502, in _create_or_update
+    result = self.client.create_function(**params)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 938, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InvalidParameterValueException: An error occurred (InvalidParameterValueException) when calling the CreateFunction operation: The role defined for the function cannot be assumed by Lambda.
+2022-12-14 15:38:21,774 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:38:23,465 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-maid-offhours
+2022-12-14 15:38:25,459 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 502, in _create_or_update
+    result = self.client.create_function(**params)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 938, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InvalidParameterValueException: An error occurred (InvalidParameterValueException) when calling the CreateFunction operation: The role defined for the function cannot be assumed by Lambda.
+2022-12-14 15:39:12,941 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:39:13,059 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 458, in _create_or_update
+    assert role, "Lambda function role must be specified"
+AssertionError: Lambda function role must be specified
+2022-12-14 15:39:20,456 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:39:20,581 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 458, in _create_or_update
+    assert role, "Lambda function role must be specified"
+AssertionError: Lambda function role must be specified
+2022-12-14 15:41:13,619 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:41:14,919 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-maid-offhours
+2022-12-14 15:41:17,973 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 502, in _create_or_update
+    result = self.client.create_function(**params)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 938, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InvalidParameterValueException: An error occurred (InvalidParameterValueException) when calling the CreateFunction operation: The role defined for the function cannot be assumed by Lambda.
+2022-12-14 15:44:51,392 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 15:44:53,002 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-maid-offhours
+2022-12-14 16:55:36,676 - custodian.policy - INFO - policy:maid-offhours resource:aws.ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 16:56:05,057 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 16:56:18,818 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 16:56:57,110 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:06:42,862 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:06:46,024 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:07:31,282 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:20:23,226 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 17:20:23,767 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 565, in provision
+    return manager.publish(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 387, in publish
+    result, changed = self._create_or_update(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/mu.py", line 458, in _create_or_update
+    assert role, "Lambda function role must be specified"
+AssertionError: Lambda function role must be specified
+2022-12-14 17:21:16,577 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:2.43
+2022-12-14 17:22:31,519 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:22:55,378 - custodian.policy - INFO - policy:maid-offhours resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:53:55,298 - custodian.policy - INFO - Provisioning policy lambda: maid-offhours region: us-east-1
+2022-12-14 17:53:57,141 - custodian.serverless - INFO - Publishing custodian policy lambda function custodian-maid-offhours

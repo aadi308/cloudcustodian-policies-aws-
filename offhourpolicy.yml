@@ -1,0 +1,22 @@
+policies:
+  - name: maid-offhours
+    description: |
+      Cloud Custodian Maid Offhours
+    comment: |
+      Stop EC2 instances after offhours that have tag of
+      key = 'maid_offhours'
+      value = schedule
+      example value -> 'on=(M-F,16);off=(M-F,23);tz=est'
+      use 'pt' for pacific time
+      See http://capitalone.github.io/cloud-custodian/docs/quickstart/offhours.html#offhours
+    resource: ec2
+    mode:
+      type: periodic
+      role: arn:aws:iam::687547058094:role/test-custodian
+      schedule: "rate(1 minute)"
+    filters:
+      - type: offhour
+        default_tz: bst
+        offhour: 1
+    actions:
+      - stop

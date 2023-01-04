@@ -1,0 +1,77 @@
+{
+  "policy": {
+    "name": "appelb-targetgroups-delete-unused",
+    "resource": "app-elb-target-group",
+    "filters": [
+      {
+        "tag:Procenter": "present"
+      }
+    ],
+    "actions": [
+      "delete"
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "093c289c-0ab0-462a-8e38-1cd9c0b6082c",
+    "start": 1672832096.1231554,
+    "end_time": 1672832097.8014555,
+    "duration": 1.678300142288208
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "elb-target.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "elasticloadbalancing.DeleteTargetGroup": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-01-04T17:19:56.132122",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-01-04T17:19:56.132129",
+      "Value": 0.0005548000335693359,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-01-04T17:19:57.801420",
+      "Value": 1.6690688133239746,
+      "Unit": "Seconds"
+    }
+  ]
+}

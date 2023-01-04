@@ -1,0 +1,4 @@
+2023-01-04 17:18:51,855 - custodian.policy - INFO - policy:appelb-targetgroups-delete-unused resource:app-elb-target-group region:us-east-1 count:0 time:5.36
+2023-01-04 17:19:43,844 - custodian.policy - INFO - policy:appelb-targetgroups-delete-unused resource:app-elb-target-group region:us-east-1 count:1 time:0.00
+2023-01-04 17:19:56,131 - custodian.policy - INFO - policy:appelb-targetgroups-delete-unused resource:app-elb-target-group region:us-east-1 count:1 time:0.00
+2023-01-04 17:19:57,800 - custodian.policy - INFO - policy:appelb-targetgroups-delete-unused action:appelbtargetgroupdeleteaction resources:1 execution_time:1.67

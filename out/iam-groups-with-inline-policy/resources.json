@@ -1,0 +1,12 @@
+[
+  {
+    "Path": "/",
+    "GroupName": "Department-Group",
+    "GroupId": "AGPA3IMHBMAME5GS22SHZ",
+    "Arn": "arn:aws:iam::773914189848:group/Department-Group",
+    "CreateDate": "2022-12-15T07:05:18+00:00",
+    "c7n:InlinePolicies": [
+      "s3-fullaccess"
+    ]
+  }
+]

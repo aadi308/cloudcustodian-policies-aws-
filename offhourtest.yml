@@ -1,0 +1,27 @@
+policies:
+- name: csp-na-ec2-off-hours-stop
+  resource: aws.ec2
+  comments: |
+    The policy will apply only to those EC2 instances that are 
+    atleast 1 hours old and include the tag "c7n_off_hours". Tag 
+    your EC2 instance with Key "c7n_off_hours" for Custodian to 
+    consider it in scope for action. Value can be anything. 
+    Custodian just look for "Key" to consider it into the scope for 
+    offhours. Stop EC2 instances as per schedule in c7n_off_hours 
+    that is 0 UTC = 6PM CST.
+  filters:
+    - "tag:c7n_do_not_shut_down": absent
+    - "tag:aws:autoscaling:groupName": absent
+    - type: offhour
+      default_tz: "utc"
+      offhour: 0
+      tag: c7n_off_hours # Use this tag to be included in scope
+    - type: instance-age
+      hours: 1  
+  mode:
+    type: periodic
+    schedule: "rate(60 minutes)"
+    execution-options:
+      output_dir: s3://bucket-name/cclogs/{{policy}}/
+  actions:
+    - stop

@@ -1,0 +1,12 @@
+policies:
+  - name: my-first-policy
+    resource: aws.ec2
+    filters:
+      - "tag:c7n_off_hours": present
+    actions:
+      - stop
+      # - type: mark-for-op
+      #   op: stop
+      #   hours: 1
+    # actions:
+    #   - terminate

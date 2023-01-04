@@ -1,0 +1,73 @@
+{
+  "policy": {
+    "name": "iam-mfa-active-keys-no-login",
+    "resource": "iam-user",
+    "filters": [
+      {
+        "type": "credential",
+        "key": "mfa_active",
+        "value": false
+      },
+      {
+        "type": "credential",
+        "key": "password_last_used",
+        "value": true
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "d6cacb3c-71b7-47d7-bb6e-185290239713",
+    "start": 1672229399.7956743,
+    "end_time": 1672229399.8297484,
+    "duration": 0.03407406806945801
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "mfa_enable.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-28T17:54:59.829229",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-28T17:54:59.829252",
+      "Value": 0.0047147274017333984,
+      "Unit": "Seconds"
+    }
+  ]
+}

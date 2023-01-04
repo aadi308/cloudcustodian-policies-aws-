@@ -1,0 +1,2 @@
+2023-01-04 13:00:31,567 - custodian.policy - INFO - policy:iam-roles-with-inline-policies resource:iam-role region:ap-south-1 count:6 time:48.08
+2023-01-04 17:36:33,193 - custodian.policy - INFO - policy:iam-roles-with-inline-policies resource:iam-role region:ap-south-1 count:7 time:38.15

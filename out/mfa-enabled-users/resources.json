@@ -1,0 +1,17 @@
+[
+  {
+    "Path": "/",
+    "UserName": "msuraj",
+    "UserId": "AIDA3IMHBMAMPXU6VU4JJ",
+    "Arn": "arn:aws:iam::773914189848:user/msuraj",
+    "CreateDate": "2021-08-08T06:48:51+00:00",
+    "PasswordLastUsed": "2021-11-02T09:21:04+00:00",
+    "MFADevices": [
+      {
+        "UserName": "msuraj",
+        "SerialNumber": "arn:aws:iam::773914189848:mfa/msuraj",
+        "EnableDate": "2021-09-09T10:08:04+00:00"
+      }
+    ]
+  }
+]

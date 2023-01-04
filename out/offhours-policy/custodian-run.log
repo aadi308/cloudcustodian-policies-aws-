@@ -1,0 +1,8 @@
+2022-12-14 17:35:52,798 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.06
+2022-12-14 17:41:58,535 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:3.40
+2022-12-14 17:42:16,492 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:43:05,655 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:45:53,164 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:46:51,254 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:46:54,627 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.00
+2022-12-14 17:51:55,881 - custodian.policy - INFO - policy:offhours-policy resource:ec2 region:us-east-1 count:0 time:0.00

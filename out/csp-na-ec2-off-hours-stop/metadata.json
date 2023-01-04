@@ -1,0 +1,87 @@
+{
+  "policy": {
+    "name": "csp-na-ec2-off-hours-stop",
+    "resource": "aws.ec2",
+    "comments": "The policy will apply only to those EC2 instances that are \natleast 1 hours old and include the tag \"c7n_off_hours\". Tag \nyour EC2 instance with Key \"c7n_off_hours\" for Custodian to \nconsider it in scope for action. Value can be anything. \nCustodian just look for \"Key\" to consider it into the scope for \noffhours. Stop EC2 instances as per schedule in c7n_off_hours \nthat is 0 UTC = 6PM CST.\n",
+    "filters": [
+      {
+        "tag:c7n_do_not_shut_down": "absent"
+      },
+      {
+        "tag:aws:autoscaling:groupName": "absent"
+      },
+      {
+        "type": "offhour",
+        "default_tz": "utc",
+        "offhour": 0,
+        "tag": "c7n_off_hours"
+      },
+      {
+        "type": "instance-age",
+        "hours": 1
+      }
+    ],
+    "mode": {
+      "type": "periodic",
+      "schedule": "rate(60 minutes)",
+      "execution-options": {
+        "output_dir": "s3://bucket-name/cclogs/{policy}/"
+      },
+      "tags": {
+        "custodian-info": "mode=periodic:version=0.9.19"
+      }
+    },
+    "actions": [
+      "stop"
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "41589993-4b50-48ff-b839-7661c4fdad31",
+    "start": 1671100783.8837037,
+    "end_time": 1671100784.2534673,
+    "duration": 0.3697636127471924
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "687547058094",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "offhourtest.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "PolicyException",
+      "Timestamp": "2022-12-15T16:24:44.253454",
+      "Value": 1,
+      "Unit": "Count"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "account_id": "773914189848",
+    "account_name": "sandbox-01cloud",
+    "c7n:iam_summary": {
+      "GroupPolicySizeQuota": 5120,
+      "InstanceProfilesQuota": 1000,
+      "Policies": 44,
+      "GroupsPerUserQuota": 10,
+      "InstanceProfiles": 4,
+      "AttachedPoliciesPerUserQuota": 10,
+      "Users": 11,
+      "PoliciesQuota": 1500,
+      "Providers": 1,
+      "AccountMFAEnabled": 0,
+      "AccessKeysPerUserQuota": 2,
+      "AssumeRolePolicySizeQuota": 2048,
+      "PolicyVersionsInUseQuota": 10000,
+      "GlobalEndpointTokenVersion": 1,
+      "VersionsPerPolicyQuota": 5,
+      "AttachedPoliciesPerGroupQuota": 10,
+      "PolicySizeQuota": 6144,
+      "Groups": 4,
+      "AccountSigningCertificatesPresent": 0,
+      "UsersQuota": 5000,
+      "ServerCertificatesQuota": 20,
+      "MFADevices": 1,
+      "UserPolicySizeQuota": 2048,
+      "PolicyVersionsInUse": 70,
+      "ServerCertificates": 0,
+      "Roles": 69,
+      "RolesQuota": 1000,
+      "SigningCertificatesPerUserQuota": 2,
+      "MFADevicesInUse": 1,
+      "RolePolicySizeQuota": 10240,
+      "AttachedPoliciesPerRoleQuota": 10,
+      "AccountAccessKeysPresent": 0,
+      "GroupsQuota": 300
+    }
+  }
+]

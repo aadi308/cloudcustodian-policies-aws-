@@ -1,0 +1,151 @@
+[
+  {
+    "AmiLaunchIndex": 0,
+    "ImageId": "ami-0b0dcb5067f052a63",
+    "InstanceId": "i-0b4ce8e6be48d78bc",
+    "InstanceType": "t2.micro",
+    "LaunchTime": "2022-12-12T11:51:35+00:00",
+    "Monitoring": {
+      "State": "disabled"
+    },
+    "Placement": {
+      "AvailabilityZone": "us-east-1a",
+      "GroupName": "",
+      "Tenancy": "default"
+    },
+    "PrivateDnsName": "ip-172-31-90-155.ec2.internal",
+    "PrivateIpAddress": "172.31.90.155",
+    "ProductCodes": [],
+    "PublicDnsName": "ec2-35-171-25-172.compute-1.amazonaws.com",
+    "PublicIpAddress": "35.171.25.172",
+    "State": {
+      "Code": 16,
+      "Name": "running"
+    },
+    "StateTransitionReason": "",
+    "SubnetId": "subnet-0587f4833f4e784b5",
+    "VpcId": "vpc-0f0b26dfbb80a8d38",
+    "Architecture": "x86_64",
+    "BlockDeviceMappings": [
+      {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+          "AttachTime": "2022-12-12T11:51:36+00:00",
+          "DeleteOnTermination": true,
+          "Status": "attached",
+          "VolumeId": "vol-00b367a393ae1bb23"
+        }
+      }
+    ],
+    "ClientToken": "f8f8af79-756d-4692-96ca-ff488dafc3f6",
+    "EbsOptimized": false,
+    "EnaSupport": true,
+    "Hypervisor": "xen",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::687547058094:instance-profile/CloudCustodian-QuickStart",
+      "Id": "AIPA2AFH7Q6XJ37PU4JEK"
+    },
+    "NetworkInterfaces": [
+      {
+        "Association": {
+          "IpOwnerId": "amazon",
+          "PublicDnsName": "ec2-35-171-25-172.compute-1.amazonaws.com",
+          "PublicIp": "35.171.25.172"
+        },
+        "Attachment": {
+          "AttachTime": "2022-12-12T11:51:35+00:00",
+          "AttachmentId": "eni-attach-012af16add3aca188",
+          "DeleteOnTermination": true,
+          "DeviceIndex": 0,
+          "Status": "attached",
+          "NetworkCardIndex": 0
+        },
+        "Description": "",
+        "Groups": [
+          {
+            "GroupName": "launch-wizard-5",
+            "GroupId": "sg-072ede0770191ac4a"
+          }
+        ],
+        "Ipv6Addresses": [],
+        "MacAddress": "12:fe:9e:27:e4:bb",
+        "NetworkInterfaceId": "eni-0acc24c6eeecc0e69",
+        "OwnerId": "687547058094",
+        "PrivateDnsName": "ip-172-31-90-155.ec2.internal",
+        "PrivateIpAddress": "172.31.90.155",
+        "PrivateIpAddresses": [
+          {
+            "Association": {
+              "IpOwnerId": "amazon",
+              "PublicDnsName": "ec2-35-171-25-172.compute-1.amazonaws.com",
+              "PublicIp": "35.171.25.172"
+            },
+            "Primary": true,
+            "PrivateDnsName": "ip-172-31-90-155.ec2.internal",
+            "PrivateIpAddress": "172.31.90.155"
+          }
+        ],
+        "SourceDestCheck": true,
+        "Status": "in-use",
+        "SubnetId": "subnet-0587f4833f4e784b5",
+        "VpcId": "vpc-0f0b26dfbb80a8d38",
+        "InterfaceType": "interface"
+      }
+    ],
+    "RootDeviceName": "/dev/xvda",
+    "RootDeviceType": "ebs",
+    "SecurityGroups": [
+      {
+        "GroupName": "launch-wizard-5",
+        "GroupId": "sg-072ede0770191ac4a"
+      }
+    ],
+    "SourceDestCheck": true,
+    "Tags": [
+      {
+        "Key": "maid_status",
+        "Value": "Resource does not meet policy: stop@2022/12/13 0730 UTC"
+      },
+      {
+        "Key": "Name",
+        "Value": "test3"
+      }
+    ],
+    "VirtualizationType": "hvm",
+    "CpuOptions": {
+      "CoreCount": 1,
+      "ThreadsPerCore": 1
+    },
+    "CapacityReservationSpecification": {
+      "CapacityReservationPreference": "open"
+    },
+    "HibernationOptions": {
+      "Configured": false
+    },
+    "MetadataOptions": {
+      "State": "applied",
+      "HttpTokens": "optional",
+      "HttpPutResponseHopLimit": 1,
+      "HttpEndpoint": "enabled",
+      "HttpProtocolIpv6": "disabled",
+      "InstanceMetadataTags": "disabled"
+    },
+    "EnclaveOptions": {
+      "Enabled": false
+    },
+    "PlatformDetails": "Linux/UNIX",
+    "UsageOperation": "RunInstances",
+    "UsageOperationUpdateTime": "2022-12-12T11:51:35+00:00",
+    "PrivateDnsNameOptions": {
+      "HostnameType": "ip-name",
+      "EnableResourceNameDnsARecord": true,
+      "EnableResourceNameDnsAAAARecord": false
+    },
+    "MaintenanceOptions": {
+      "AutoRecovery": "default"
+    },
+    "c7n:MatchedFilters": [
+      "tag:CostCenter"
+    ]
+  }
+]

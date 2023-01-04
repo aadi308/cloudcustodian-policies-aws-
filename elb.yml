@@ -1,0 +1,7 @@
+policies:
+  - name: appelb-delete-failed-elb
+    resource: app-elb
+    filters:
+      - "tag:Procenter": present
+    actions:
+      - delete

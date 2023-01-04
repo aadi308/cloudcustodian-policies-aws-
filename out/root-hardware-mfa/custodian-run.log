@@ -1,0 +1,2 @@
+2022-12-28 16:56:49,773 - custodian.policy - INFO - policy:root-hardware-mfa resource:account region:us-east-1 count:1 time:2.57
+2022-12-28 17:23:05,534 - custodian.policy - INFO - policy:root-hardware-mfa resource:account region:us-east-1 count:1 time:2.93

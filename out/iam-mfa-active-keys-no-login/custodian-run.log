@@ -1,0 +1,5 @@
+2022-12-28 17:53:12,258 - custodian.policy - INFO - policy:iam-mfa-active-keys-no-login resource:iam-user region:us-east-1 count:0 time:9.58
+2022-12-28 17:53:32,450 - custodian.policy - INFO - policy:iam-mfa-active-keys-no-login resource:iam-user region:us-east-1 count:0 time:0.00
+2022-12-28 17:53:58,127 - custodian.policy - INFO - policy:iam-mfa-active-keys-no-login resource:iam-user region:us-east-1 count:0 time:0.00
+2022-12-28 17:54:16,803 - custodian.policy - INFO - policy:iam-mfa-active-keys-no-login resource:iam-user region:us-east-1 count:0 time:0.01
+2022-12-28 17:54:59,828 - custodian.policy - INFO - policy:iam-mfa-active-keys-no-login resource:iam-user region:us-east-1 count:0 time:0.00

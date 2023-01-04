@@ -1,0 +1,33 @@
+[
+  {
+    "CidrBlock": "10.0.0.0/24",
+    "DhcpOptionsId": "dopt-f574758f",
+    "State": "available",
+    "VpcId": "vpc-029e44bdcd62c7fda",
+    "OwnerId": "773914189848",
+    "InstanceTenancy": "default",
+    "CidrBlockAssociationSet": [
+      {
+        "AssociationId": "vpc-cidr-assoc-02c346422c8d9266e",
+        "CidrBlock": "10.0.0.0/24",
+        "CidrBlockState": {
+          "State": "associated"
+        }
+      }
+    ],
+    "IsDefault": false,
+    "Tags": [
+      {
+        "Key": "test",
+        "Value": ""
+      },
+      {
+        "Key": "Name",
+        "Value": "test-aadi"
+      }
+    ],
+    "c7n:MatchedFilters": [
+      "tag:test"
+    ]
+  }
+]

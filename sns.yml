@@ -1,0 +1,8 @@
+policies:
+   - name: remove-sns-cross-account
+     resource: sns
+     filters:
+       - type: cross-account
+         #     actions:
+         # - type: remove-statements
+         # statement_ids: matched

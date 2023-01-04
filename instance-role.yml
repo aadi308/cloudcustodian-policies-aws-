@@ -1,0 +1,6 @@
+policies:
+  - name: iam-instance-profile-set-role
+    resource: iam-profile
+    actions:
+      - type: set-role
+        role: my-test-role

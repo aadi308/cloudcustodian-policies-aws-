@@ -1,0 +1,74 @@
+{
+  "policy": {
+    "name": "my-first-policy",
+    "resource": "vpc",
+    "filters": [
+      {
+        "tag:test": "present"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "a28727a5-02c3-4021-ab1d-1f0adea3f695",
+    "start": 1672295735.3891976,
+    "end_time": 1672295737.672837,
+    "duration": 2.283639430999756
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "custodian.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "ec2.DescribeVpcs": 1
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-29T12:20:37.671685",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-29T12:20:37.671726",
+      "Value": 2.2078912258148193,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2022-12-29T12:20:37.672802",
+      "Value": 6.67572021484375e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

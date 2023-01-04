@@ -1,0 +1,10 @@
+policies:
+  - name: vpc-enable-flow-logs
+    resource: vpc
+    filters:
+      - type: flow-logs
+        enabled: false
+    actions:
+      - type: set-flow-log
+        DeliverLogsPermissionArn: arn:aws:iam::773914189848:role/aadi-flow-logs
+        LogGroupName: /custodian/vpc/flowlogs/

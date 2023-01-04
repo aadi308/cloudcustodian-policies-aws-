@@ -1,0 +1,69 @@
+{
+  "policy": {
+    "name": "iam-groups-with-inline-policy",
+    "resource": "iam-group",
+    "filters": [
+      {
+        "type": "has-inline-policy",
+        "value": true
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "fda5a648-7d40-4703-8936-9b029cace9ad",
+    "start": 1672820618.685816,
+    "end_time": 1672820622.7673357,
+    "duration": 4.081519603729248
+  },
+  "config": {
+    "region": "ap-south-1",
+    "regions": [
+      "ap-south-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": true,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "group-attached.yaml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListGroupPolicies": 10
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-01-04T14:08:42.766837",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-01-04T14:08:42.766859",
+      "Value": 4.068489074707031,
+      "Unit": "Seconds"
+    }
+  ]
+}

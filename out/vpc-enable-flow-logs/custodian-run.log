@@ -1,0 +1,4 @@
+2022-12-29 15:21:07,248 - custodian.policy - INFO - policy:vpc-enable-flow-logs resource:vpc region:us-east-1 count:2 time:4.09
+2022-12-29 15:21:25,062 - custodian.policy - INFO - policy:vpc-enable-flow-logs resource:vpc region:us-east-1 count:1 time:1.77
+2022-12-29 15:23:57,652 - custodian.policy - INFO - policy:vpc-enable-flow-logs resource:vpc region:us-east-1 count:2 time:1.91
+2022-12-29 15:24:00,904 - custodian.policy - INFO - policy:vpc-enable-flow-logs action:createflowlogs resources:2 execution_time:3.25

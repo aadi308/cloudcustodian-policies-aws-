@@ -1,0 +1,11 @@
+policies:
+  - name: my-first-policy
+    resource: vpc
+    filters:
+      - "tag:test": present
+    # actions:
+    #   - type: mark-for-op
+    #     op: stop
+    #     hours: 1
+    # actions:
+    #   - stop

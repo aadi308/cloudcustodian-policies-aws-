@@ -1,0 +1,5 @@
+policies:
+  - name: alert-on-low-severity-vulnerabilities
+    resource: ec2
+    severity: low
+    type: vulnerability-alert

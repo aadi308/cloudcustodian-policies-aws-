@@ -1,0 +1,78 @@
+{
+  "policy": {
+    "name": "mfa-enabled-users",
+    "resource": "iam-user",
+    "filters": [
+      {
+        "type": "mfa-device",
+        "key": "MFADevices",
+        "value": "not-null"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "cb990d14-f791-4b25-a64c-5accd9a29d64",
+    "start": 1672223627.0152667,
+    "end_time": 1672223640.5709229,
+    "duration": 13.55565619468689
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "mfa.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 11,
+    "iam.ListMFADevices": 11
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-28T16:19:00.570239",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-28T16:19:00.570268",
+      "Value": 13.526920080184937,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2022-12-28T16:19:00.570895",
+      "Value": 6.67572021484375e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

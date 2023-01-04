@@ -1,0 +1,70 @@
+{
+  "policy": {
+    "name": "remove-sns-cross-account",
+    "resource": "sns",
+    "filters": [
+      {
+        "type": "cross-account"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "c6746642-475a-40c9-a0bf-cd2928b19266",
+    "start": 1672388146.725445,
+    "end_time": 1672388153.2666998,
+    "duration": 6.541254758834839
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "sns.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "sns.ListTopics": 1,
+    "sns.GetTopicAttributes": 3,
+    "sns.ListTagsForResource": 3
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-30T14:00:53.266192",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-30T14:00:53.266219",
+      "Value": 6.509925365447998,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+2023-01-04 17:13:38,648 - custodian.policy - INFO - policy:appelb-delete-failed-elb resource:app-elb region:us-east-1 count:1 time:4.08
+2023-01-04 17:13:57,385 - custodian.policy - INFO - policy:appelb-delete-failed-elb resource:app-elb region:us-east-1 count:1 time:0.00
+2023-01-04 17:13:58,554 - custodian.policy - INFO - policy:appelb-delete-failed-elb action:appelbdeleteaction resources:1 execution_time:1.17

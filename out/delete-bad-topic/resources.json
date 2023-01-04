@@ -1,0 +1,23 @@
+[
+  {
+    "TopicArn": "arn:aws:sns:us-east-1:773914189848:test.fifo",
+    "Policy": "{\"Version\":\"2008-10-17\",\"Id\":\"__default_policy_ID\",\"Statement\":[{\"Sid\":\"__default_statement_ID\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":[\"SNS:GetTopicAttributes\",\"SNS:SetTopicAttributes\",\"SNS:AddPermission\",\"SNS:RemovePermission\",\"SNS:DeleteTopic\",\"SNS:Subscribe\",\"SNS:ListSubscriptionsByTopic\",\"SNS:Publish\"],\"Resource\":\"arn:aws:sns:us-east-1:773914189848:test.fifo\",\"Condition\":{\"StringEquals\":{\"AWS:SourceOwner\":\"773914189848\"}}}]}",
+    "Owner": "773914189848",
+    "SubscriptionsPending": "0",
+    "EffectiveDeliveryPolicy": "{\"http\":{\"defaultHealthyRetryPolicy\":{\"minDelayTarget\":20,\"maxDelayTarget\":20,\"numRetries\":3,\"numMaxDelayRetries\":0,\"numNoDelayRetries\":0,\"numMinDelayRetries\":0,\"backoffFunction\":\"linear\"},\"disableSubscriptionOverrides\":false}}",
+    "SubscriptionsConfirmed": "0",
+    "FifoTopic": "true",
+    "DisplayName": "",
+    "ContentBasedDeduplication": "false",
+    "SubscriptionsDeleted": "0",
+    "Tags": [
+      {
+        "Key": "Procenter",
+        "Value": ""
+      }
+    ],
+    "c7n:MatchedFilters": [
+      "tag:Procenter"
+    ]
+  }
+]

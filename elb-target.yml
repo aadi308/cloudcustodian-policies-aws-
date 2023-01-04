@@ -1,0 +1,7 @@
+policies:
+  - name: appelb-targetgroups-delete-unused
+    resource: app-elb-target-group
+    filters:
+      - "tag:Procenter": present
+    actions:
+      - delete

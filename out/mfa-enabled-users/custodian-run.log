@@ -1,0 +1,51 @@
+2022-12-28 15:04:34,454 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 531, in resources
+    resources = self.source.resources(query)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 230, in resources
+    return self.query.filter(self.manager, **query)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 79, in filter
+    return self._invoke_client_enum(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 57, in _invoke_client_enum
+    data = results.build_full_result()
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/paginate.py", line 479, in build_full_result
+    for response in self:
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 761, in _make_request
+    return self.retry(self._method, **current_kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/utils.py", line 446, in _retry
+    return func(*args, **kw)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 938, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ListUsers operation: User: arn:aws:iam::773914189848:user/terraspace is not authorized to perform: iam:ListUsers on resource: arn:aws:iam::773914189848:user/ because no identity-based policy allows the iam:ListUsers action
+2022-12-28 15:07:32,384 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 531, in resources
+    resources = self.source.resources(query)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 230, in resources
+    return self.query.filter(self.manager, **query)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 79, in filter
+    return self._invoke_client_enum(
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 57, in _invoke_client_enum
+    data = results.build_full_result()
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/paginate.py", line 479, in build_full_result
+    for response in self:
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/paginate.py", line 269, in __iter__
+    response = self._make_request(current_kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/query.py", line 761, in _make_request
+    return self.retry(self._method, **current_kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/c7n/utils.py", line 446, in _retry
+    return func(*args, **kw)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 514, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/aadi/cloudcustodian/custodian/lib/python3.10/site-packages/botocore/client.py", line 938, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the ListUsers operation: User: arn:aws:iam::773914189848:user/terraspace is not authorized to perform: iam:ListUsers on resource: arn:aws:iam::773914189848:user/ because no identity-based policy allows the iam:ListUsers action
+2022-12-28 16:19:00,569 - custodian.policy - INFO - policy:mfa-enabled-users resource:iam-user region:us-east-1 count:1 time:13.53

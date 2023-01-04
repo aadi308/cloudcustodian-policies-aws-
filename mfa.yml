@@ -1,0 +1,28 @@
+policies:
+  - name: iam-enable-mfa
+    resource: iam-user
+    filters:
+      - type: mfa-not-enabled
+    actions:
+      - type: enable-mfa
+        virtual-mfa-type: virtual
+
+
+
+
+
+
+
+# policies:
+#   - name: last-tym-accessKey-used
+#     resource: iam-user
+#     filters:
+#       - type: credential
+#         key: password_last_used
+#         value: present
+#       - type: credential
+#         key: mfa_active
+#         value: false
+#     actions:
+#       - type: enable-mfa
+

@@ -1,0 +1,7 @@
+policies:
+  - name: iam-groups-with-inline-policy
+    resource: iam-group
+    filters:
+      - type: has-inline-policy
+        value: True
+

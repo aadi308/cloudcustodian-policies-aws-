@@ -1,0 +1,73 @@
+{
+  "policy": {
+    "name": "ec2-tag-compliance",
+    "resource": "ec2",
+    "comment": "Report on total count of non compliant instances\n",
+    "filters": [
+      {
+        "tag:CostCenter": "absent"
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "cc6ac895-707b-43ca-9ede-793ed4e901db",
+    "start": 1670925084.5215368,
+    "end_time": 1670925084.5310519,
+    "duration": 0.009515047073364258
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "687547058094",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "custodian.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-13T15:36:24.530627",
+      "Value": 1,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-13T15:36:24.530634",
+      "Value": 0.0006418228149414062,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2022-12-13T15:36:24.531043",
+      "Value": 1.430511474609375e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

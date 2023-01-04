@@ -1,0 +1,48 @@
+[
+  {
+    "CidrBlock": "172.31.0.0/16",
+    "DhcpOptionsId": "dopt-f574758f",
+    "State": "available",
+    "VpcId": "vpc-5600642b",
+    "OwnerId": "773914189848",
+    "InstanceTenancy": "default",
+    "CidrBlockAssociationSet": [
+      {
+        "AssociationId": "vpc-cidr-assoc-5041303f",
+        "CidrBlock": "172.31.0.0/16",
+        "CidrBlockState": {
+          "State": "associated"
+        }
+      }
+    ],
+    "IsDefault": true
+  },
+  {
+    "CidrBlock": "10.0.0.0/16",
+    "DhcpOptionsId": "dopt-f574758f",
+    "State": "available",
+    "VpcId": "vpc-02fbcdb4a3ed29d29",
+    "OwnerId": "773914189848",
+    "InstanceTenancy": "default",
+    "CidrBlockAssociationSet": [
+      {
+        "AssociationId": "vpc-cidr-assoc-07b4bf7b71fb1021f",
+        "CidrBlock": "10.0.0.0/16",
+        "CidrBlockState": {
+          "State": "associated"
+        }
+      }
+    ],
+    "IsDefault": false,
+    "Tags": [
+      {
+        "Key": "kubernetes.io/cluster/sjtest01",
+        "Value": "shared"
+      },
+      {
+        "Key": "Name",
+        "Value": "sj"
+      }
+    ]
+  }
+]

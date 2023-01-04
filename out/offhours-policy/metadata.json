@@ -1,0 +1,71 @@
+{
+  "policy": {
+    "name": "offhours-policy",
+    "resource": "ec2",
+    "filters": [
+      {
+        "type": "offhour",
+        "default_tz": "bst",
+        "offhour": 0
+      }
+    ],
+    "actions": [
+      "stop"
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "bfcf8dc9-b29b-4644-af03-d456e2627596",
+    "start": 1671019615.8608432,
+    "end_time": 1671019615.882342,
+    "duration": 0.021498918533325195
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "687547058094",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "offhourpolicy.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-14T17:51:55.881957",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-14T17:51:55.881970",
+      "Value": 0.0011630058288574219,
+      "Unit": "Seconds"
+    }
+  ]
+}

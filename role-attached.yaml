@@ -1,0 +1,6 @@
+policies:
+  - name: iam-roles-with-inline-policies
+    resource: iam-role
+    filters:
+      - type: has-inline-policy
+        value: True

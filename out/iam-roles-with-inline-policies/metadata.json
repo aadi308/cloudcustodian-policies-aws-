@@ -1,0 +1,77 @@
+{
+  "policy": {
+    "name": "iam-roles-with-inline-policies",
+    "resource": "iam-role",
+    "filters": [
+      {
+        "type": "has-inline-policy",
+        "value": true
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "06d27eb8-d6c5-46d7-8cb5-c7554eecc259",
+    "start": 1672833055.033845,
+    "end_time": 1672833093.349111,
+    "duration": 38.315266132354736
+  },
+  "config": {
+    "region": "ap-south-1",
+    "regions": [
+      "ap-south-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "role-attached.yaml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListRoles": 1,
+    "iam.GetRole": 82,
+    "iam.ListRolePolicies": 82
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2023-01-04T17:36:33.317363",
+      "Value": 7,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2023-01-04T17:36:33.317401",
+      "Value": 38.146249532699585,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2023-01-04T17:36:33.349063",
+      "Value": 7.62939453125e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

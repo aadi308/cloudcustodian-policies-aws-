@@ -1,0 +1,101 @@
+[
+  {
+    "Path": "/",
+    "UserName": "raju-test",
+    "UserId": "AIDA3IMHBMAMPZIQPQEP6",
+    "Arn": "arn:aws:iam::773914189848:user/raju-test",
+    "CreateDate": "2022-12-14T09:38:55+00:00",
+    "PasswordLastUsed": "2022-12-14T09:40:54+00:00",
+    "Tags": [
+      {
+        "Key": "Department",
+        "Value": "01Proassociate"
+      },
+      {
+        "Key": "Environment",
+        "Value": "Test"
+      },
+      {
+        "Key": "Purpose",
+        "Value": "Learning IAM Console and API Access"
+      }
+    ],
+    "c7n:credential-report": {
+      "user": "raju-test",
+      "arn": "arn:aws:iam::773914189848:user/raju-test",
+      "user_creation_time": "2022-12-14T09:38:55+00:00",
+      "password_enabled": true,
+      "password_last_used": "2022-12-14T09:40:54+00:00",
+      "password_last_changed": "2022-12-14T09:38:58+00:00",
+      "password_next_rotation": null,
+      "mfa_active": false,
+      "access_keys": [
+        {
+          "active": true,
+          "last_rotated": "2022-12-14T09:38:57+00:00",
+          "last_used_date": null,
+          "last_used_region": null,
+          "last_used_service": null
+        }
+      ]
+    }
+  },
+  {
+    "Path": "/",
+    "UserName": "tess3",
+    "UserId": "AIDA3IMHBMAMKTKXOX2YY",
+    "Arn": "arn:aws:iam::773914189848:user/tess3",
+    "CreateDate": "2022-12-15T06:52:11+00:00",
+    "PasswordLastUsed": "2022-12-15T06:53:06+00:00",
+    "c7n:credential-report": {
+      "user": "tess3",
+      "arn": "arn:aws:iam::773914189848:user/tess3",
+      "user_creation_time": "2022-12-15T06:52:11+00:00",
+      "password_enabled": true,
+      "password_last_used": "2022-12-15T06:53:06+00:00",
+      "password_last_changed": "2022-12-15T06:53:34+00:00",
+      "password_next_rotation": null,
+      "mfa_active": false,
+      "access_keys": [
+        {
+          "active": true,
+          "last_rotated": "2022-12-15T06:52:13+00:00",
+          "last_used_date": null,
+          "last_used_region": null,
+          "last_used_service": null
+        }
+      ]
+    }
+  },
+  {
+    "Path": "/",
+    "UserName": "test-gs",
+    "UserId": "AIDA3IMHBMAMLFOOCLGUF",
+    "Arn": "arn:aws:iam::773914189848:user/test-gs",
+    "CreateDate": "2022-12-14T15:05:59+00:00",
+    "PasswordLastUsed": "2022-12-14T23:29:24+00:00",
+    "PermissionsBoundary": {
+      "PermissionsBoundaryType": "Policy",
+      "PermissionsBoundaryArn": "arn:aws:iam::773914189848:policy/S3acess"
+    },
+    "c7n:credential-report": {
+      "user": "test-gs",
+      "arn": "arn:aws:iam::773914189848:user/test-gs",
+      "user_creation_time": "2022-12-14T15:05:59+00:00",
+      "password_enabled": true,
+      "password_last_used": "2022-12-14T23:29:24+00:00",
+      "password_last_changed": "2022-12-14T15:06:01+00:00",
+      "password_next_rotation": null,
+      "mfa_active": false,
+      "access_keys": [
+        {
+          "active": true,
+          "last_rotated": "2022-12-14T15:06:00+00:00",
+          "last_used_date": null,
+          "last_used_region": null,
+          "last_used_service": null
+        }
+      ]
+    }
+  }
+]

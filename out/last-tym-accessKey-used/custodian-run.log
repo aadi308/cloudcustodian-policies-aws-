@@ -1,0 +1,4 @@
+2022-12-28 16:20:30,246 - custodian.policy - INFO - policy:last-tym-accessKey-used resource:iam-user region:us-east-1 count:3 time:1.96
+2022-12-28 16:28:32,275 - custodian.policy - INFO - policy:last-tym-accessKey-used resource:iam-user region:us-east-1 count:1 time:0.00
+2022-12-28 17:12:57,329 - custodian.policy - INFO - policy:last-tym-accessKey-used resource:iam-user region:us-east-1 count:3 time:7.52
+2022-12-28 17:12:59,319 - custodian.policy - INFO - policy:last-tym-accessKey-used action:usertag resources:3 execution_time:1.87

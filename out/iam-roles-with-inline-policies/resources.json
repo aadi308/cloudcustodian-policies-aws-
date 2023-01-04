@@ -1,0 +1,223 @@
+[
+  {
+    "Path": "/gorillastack/autotag/master/",
+    "RoleName": "AutoTag",
+    "RoleId": "AROA3IMHBMAMHDLLQMWR5",
+    "Arn": "arn:aws:iam::773914189848:role/gorillastack/autotag/master/AutoTag",
+    "CreateDate": "2022-12-29T07:44:50+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2008-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "AWS": "arn:aws:iam::773914189848:role/gorillastack/autotag/execution/AutoTagLambda"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    },
+    "Description": "",
+    "MaxSessionDuration": 3600,
+    "RoleLastUsed": {
+      "LastUsedDate": "2023-01-04T11:26:53+00:00",
+      "Region": "us-east-1"
+    },
+    "c7n:InlinePolicies": [
+      "AutoTagMasterPolicy"
+    ]
+  },
+  {
+    "Path": "/gorillastack/autotag/execution/",
+    "RoleName": "AutoTagLambda",
+    "RoleId": "AROA3IMHBMAMCXWC2DMR5",
+    "Arn": "arn:aws:iam::773914189848:role/gorillastack/autotag/execution/AutoTagLambda",
+    "CreateDate": "2022-12-29T07:44:07+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2008-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "lambda.amazonaws.com"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    },
+    "Description": "",
+    "MaxSessionDuration": 3600,
+    "RoleLastUsed": {
+      "LastUsedDate": "2023-01-04T11:24:21+00:00",
+      "Region": "ap-south-1"
+    },
+    "c7n:InlinePolicies": [
+      "AutoTagExecutionPolicy"
+    ]
+  },
+  {
+    "Path": "/aws-reserved/sso.amazonaws.com/ap-south-1/",
+    "RoleName": "AWSReservedSSO_01ProAssociate_7f661ed334f5018c",
+    "RoleId": "AROA3IMHBMAML6ZNURHF3",
+    "Arn": "arn:aws:iam::773914189848:role/aws-reserved/sso.amazonaws.com/ap-south-1/AWSReservedSSO_01ProAssociate_7f661ed334f5018c",
+    "CreateDate": "2022-12-13T14:45:33+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Federated": "arn:aws:iam::773914189848:saml-provider/AWSSSO_3054ab91d220dd39_DO_NOT_DELETE"
+          },
+          "Action": [
+            "sts:AssumeRoleWithSAML",
+            "sts:TagSession"
+          ],
+          "Condition": {
+            "StringEquals": {
+              "SAML:aud": "https://signin.aws.amazon.com/saml"
+            }
+          }
+        }
+      ]
+    },
+    "Description": "This is the policy for the 01ProAssociate",
+    "MaxSessionDuration": 43200,
+    "RoleLastUsed": {
+      "LastUsedDate": "2023-01-04T11:36:45+00:00",
+      "Region": "us-east-2"
+    },
+    "c7n:InlinePolicies": [
+      "AwsSSOInlinePolicy"
+    ]
+  },
+  {
+    "Path": "/aws-reserved/sso.amazonaws.com/ap-south-1/",
+    "RoleName": "AWSReservedSSO_01ProSME_ce211e42fb79f2b2",
+    "RoleId": "AROA3IMHBMAMHCPU4DBIR",
+    "Arn": "arn:aws:iam::773914189848:role/aws-reserved/sso.amazonaws.com/ap-south-1/AWSReservedSSO_01ProSME_ce211e42fb79f2b2",
+    "CreateDate": "2022-12-15T05:06:43+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Federated": "arn:aws:iam::773914189848:saml-provider/AWSSSO_3054ab91d220dd39_DO_NOT_DELETE"
+          },
+          "Action": [
+            "sts:AssumeRoleWithSAML",
+            "sts:TagSession"
+          ],
+          "Condition": {
+            "StringEquals": {
+              "SAML:aud": "https://signin.aws.amazon.com/saml"
+            }
+          }
+        }
+      ]
+    },
+    "Description": "This is the permission set for the SME",
+    "MaxSessionDuration": 43200,
+    "RoleLastUsed": {
+      "LastUsedDate": "2022-12-19T09:06:36+00:00",
+      "Region": "ap-south-1"
+    },
+    "c7n:InlinePolicies": [
+      "AwsSSOInlinePolicy"
+    ]
+  },
+  {
+    "Path": "/service-role/",
+    "RoleName": "dipendra-trail-role",
+    "RoleId": "AROA3IMHBMAMHONV6EKLB",
+    "Arn": "arn:aws:iam::773914189848:role/service-role/dipendra-trail-role",
+    "CreateDate": "2023-01-04T08:22:00+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "cloudtrail.amazonaws.com"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    },
+    "MaxSessionDuration": 3600,
+    "RoleLastUsed": {
+      "LastUsedDate": "2023-01-04T11:33:47+00:00",
+      "Region": "ap-south-1"
+    },
+    "c7n:InlinePolicies": [
+      "CloudTrailPolicyForCloudWatchLogs_d8f53391-8ed8-4c6b-941b-1c600e0449f2"
+    ]
+  },
+  {
+    "Path": "/",
+    "RoleName": "OrganizationAccountAccessRole",
+    "RoleId": "AROA3IMHBMAMCAWQ3YIZU",
+    "Arn": "arn:aws:iam::773914189848:role/OrganizationAccountAccessRole",
+    "CreateDate": "2021-06-27T05:54:58+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "AWS": "arn:aws:iam::092764358627:root"
+          },
+          "Action": "sts:AssumeRole"
+        }
+      ]
+    },
+    "MaxSessionDuration": 3600,
+    "RoleLastUsed": {},
+    "c7n:InlinePolicies": [
+      "AdministratorAccess"
+    ]
+  },
+  {
+    "Path": "/",
+    "RoleName": "vmimport",
+    "RoleId": "AROA3IMHBMAMEOFEHVKBL",
+    "Arn": "arn:aws:iam::773914189848:role/vmimport",
+    "CreateDate": "2023-01-03T06:39:14+00:00",
+    "AssumeRolePolicyDocument": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Allow",
+          "Principal": {
+            "Service": "vmie.amazonaws.com"
+          },
+          "Action": "sts:AssumeRole",
+          "Condition": {
+            "StringEquals": {
+              "sts:Externalid": "vmimport"
+            }
+          }
+        }
+      ]
+    },
+    "MaxSessionDuration": 3600,
+    "Tags": [
+      {
+        "Key": "AutoTag_Creator",
+        "Value": "arn:aws:iam::773914189848:user/sregmi"
+      },
+      {
+        "Key": "AutoTag_CreateTime",
+        "Value": "2023-01-03T06:39:14Z"
+      }
+    ],
+    "RoleLastUsed": {
+      "LastUsedDate": "2023-01-03T07:50:58+00:00",
+      "Region": "ap-south-1"
+    },
+    "c7n:InlinePolicies": [
+      "vmimport"
+    ]
+  }
+]

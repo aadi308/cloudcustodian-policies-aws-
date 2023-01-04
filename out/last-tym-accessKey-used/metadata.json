@@ -1,0 +1,93 @@
+{
+  "policy": {
+    "name": "last-tym-accessKey-used",
+    "resource": "iam-user",
+    "filters": [
+      {
+        "type": "credential",
+        "key": "password_last_used",
+        "value": "present"
+      },
+      {
+        "type": "credential",
+        "key": "mfa_active",
+        "value": false
+      }
+    ],
+    "actions": [
+      {
+        "type": "tag",
+        "tags": {
+          "Environment": "Staging",
+          "ResourceOwner": "Avengers"
+        }
+      }
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "b6d5fb05-db64-4a96-ae0b-a86e6a0171ca",
+    "start": 1672226869.7795284,
+    "end_time": 1672226879.3201683,
+    "duration": 9.540639877319336
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "773914189848",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "mfa.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "iam.ListUsers": 1,
+    "iam.GetUser": 11,
+    "iam.GetCredentialReport": 1,
+    "iam.TagUser": 3
+  },
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2022-12-28T17:12:57.444532",
+      "Value": 3,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2022-12-28T17:12:57.444568",
+      "Value": 7.521772146224976,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2022-12-28T17:12:59.320134",
+      "Value": 1.8743233680725098,
+      "Unit": "Seconds"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "policy": {
+    "name": "maid-offhours",
+    "description": "Cloud Custodian Maid Offhours\n",
+    "comment": "Stop EC2 instances after offhours that have tag of\nkey = 'maid_offhours'\nvalue = schedule\nexample value -> 'on=(M-F,16);off=(M-F,23);tz=est'\nuse 'pt' for pacific time\nSee http://capitalone.github.io/cloud-custodian/docs/quickstart/offhours.html#offhours\n",
+    "resource": "ec2",
+    "mode": {
+      "type": "periodic",
+      "role": "arn:aws:iam::687547058094:role/test-custodian",
+      "schedule": "rate(1 minute)",
+      "tags": {
+        "custodian-info": "mode=periodic:version=0.9.19"
+      }
+    },
+    "filters": [
+      {
+        "type": "offhour",
+        "default_tz": "bst",
+        "offhour": 1
+      }
+    ],
+    "actions": [
+      "stop"
+    ]
+  },
+  "version": "0.9.19",
+  "execution": {
+    "id": "6e62fc1f-726c-4a2c-b2cd-441b0613bbea",
+    "start": 1671019735.290866,
+    "end_time": 1671019750.5568562,
+    "duration": 15.265990257263184
+  },
+  "config": {
+    "region": "us-east-1",
+    "regions": [
+      "us-east-1"
+    ],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": "687547058094",
+    "assume_role": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "out",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "offhourpolicy.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {
+    "lambda.GetFunction": 1,
+    "lambda.CreateFunction": 1,
+    "lambda.GetFunctionConfiguration": 2,
+    "events.DescribeRule": 1,
+    "lambda.AddPermission": 1,
+    "events.ListTargetsByRule": 1
+  },
+  "metrics": []
+}
